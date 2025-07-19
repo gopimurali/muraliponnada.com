@@ -3,43 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Murali Ponnada | Full Stack & Python Developer | Building scalable financial apps & data systems">
+  <meta name="keywords" content="Murali Ponnada, Python Developer, Full Stack Developer, Angular, FinTech, Resume">
+  <meta name="author" content="Murali Ponnada">
   <title>Murali Ponnada | Software Engineer</title>
   <link rel="icon" href="favicon.png" type="image/png" />
-
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+      margin: 0;
+      padding: 0;
       background-color: #ffffff;
       color: #000000;
       transition: background-color 0.3s, color 0.3s;
     }
-
     body.dark-mode {
       background-color: #121212;
       color: #ffffff;
     }
-
-    h1, h2 {
-      margin-top: 2rem;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
     }
-
-    a {
-      color: #007acc;
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
-
-    body.dark-mode a {
-      color: #80bfff;
+    .tagline {
+      font-size: 1.1rem;
+      margin-top: -10px;
+      margin-bottom: 20px;
+      color: #666;
     }
-
     .toggle-container {
       position: fixed;
       top: 1rem;
       right: 1rem;
     }
-
     .toggle-button {
       padding: 6px 12px;
       background-color: #eee;
@@ -48,56 +50,89 @@
       font-weight: bold;
       border-radius: 6px;
     }
-
     body.dark-mode .toggle-button {
       background-color: #333;
       color: white;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    section:nth-child(even) {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .resume-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Dark Mode Toggle -->
   <div class="toggle-container">
     <button class="toggle-button" onclick="toggleDarkMode()">🌙 Dark Mode</button>
   </div>
 
-  <!-- Portfolio Content -->
-  <h1>Murali Venkateswara Gopi Krishna Ponnada</h1>
-  <h3>Software Engineer | Full Stack Developer | Python Developer</h3>
+  <div class="container">
+    <h1>
+      <img src="favicon.png" alt="Murali Logo" width="50" height="50" style="border-radius: 50%;">
+      Murali Venkateswara Gopi Krishna Ponnada
+    </h1>
+    <div class="tagline">🚀 Experienced in Python, Angular & High-Volume Trading Systems | Let’s Build Scalable Software</div>
 
-  <p>📍 Jersey City, NJ<br />
-    📧 <a href="mailto:hello@muraliponnada.com">hello@muraliponnada.com</a><br />
-    📞 (607) 595-7476<br />
-    🔗 <a href="https://www.linkedin.com/in/gopimurali" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/gopimurali" target="_blank">GitHub</a>
-  </p>
+    <p>📍 Jersey City, NJ<br />
+      📧 <a href="mailto:hello@muraliponnada.com">hello@muraliponnada.com</a><br />
+      📞 (607) 595-7476<br />
+      🔗 <a href="https://www.linkedin.com/in/gopimurali" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/gopimurali" target="_blank">GitHub</a>
+    </p>
 
-  <h2>About Me</h2>
-  <p>I'm a passionate and results-driven software engineer with a strong foundation in computer science and hands-on experience in full stack development, cloud platforms, and agile teams. I specialize in Python, Angular, and backend systems for high-volume data applications.</p>
+    <a href="MuraliResume1.pdf" download class="resume-button">📄 Download Resume</a>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Languages: Python, Java, JavaScript, TypeScript, HTML5, CSS3</li>
-    <li>Frameworks: Angular, Flask, Django, Node.js, Express.js</li>
-    <li>Tools: Git, Postman, Docker, Jira, Quartz, Selenium</li>
-    <li>Databases: MySQL, MongoDB, SandraDB</li>
-  </ul>
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a passionate and results-driven software engineer with a strong foundation in computer science and hands-on experience in full stack development, cloud platforms, and agile teams. I specialize in Python, Angular, and backend systems for high-volume data applications.</p>
+    </section>
 
-  <h2>Experience</h2>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: Python, Java, JavaScript, TypeScript, HTML5, CSS3</li>
+        <li>Frameworks: Angular, Flask, Django, Node.js, Express.js</li>
+        <li>Tools: Git, Postman, Docker, Jira, Quartz, Selenium</li>
+        <li>Databases: MySQL, MongoDB, SandraDB</li>
+      </ul>
+    </section>
 
-  <strong>Bank of America</strong> – Application Developer (Oct 2024 – Present)
-  <ul>
-    <li>Developed Python-based solutions handling ~1M trades/day</li>
-    <li>Reduced production issues by 15% through robust testing and CI/CD</li>
-    <li>Built new flows for downstream systems and improved latency by 10%</li>
-  </ul>
+    <section>
+      <h2>Experience</h2>
+      <p><strong>Bank of America</strong> – Application Developer (Oct 2024 – Present)</p>
+      <ul>
+        <li>Developed Python-based solutions handling ~1M trades/day</li>
+        <li>Reduced production issues by 15% through robust testing and CI/CD</li>
+        <li>Built new flows for downstream systems and improved latency by 10%</li>
+      </ul>
 
-  <strong>Binghamton University</strong> – Research Intern (Jul 2024 – Oct 2024)
-  <ul>
-    <li>Processed brain scan images and visualized cerebral blood flow data</li>
-    <li>Worked with MATLAB scripts and large datasets to extract patterns</li>
-  </ul>
+      <p><strong>Binghamton University</strong> – Research Intern (Jul 2024 – Oct 2024)</p>
+      <ul>
+        <li>Processed brain scan images and visualized cerebral blood flow data</li>
+        <li>Improved image processing for age-related neural studies</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <ul>
+        <li><strong>Blood Bank Management System</strong> – AWS, React.js, Node.js<br />Cloud-based system for tracking donations and requests efficiently.</li>
+        <li><strong>Health Reddit Data Analysis</strong> – Python, MongoDB<br />Performed sentiment analysis on Reddit posts to derive health trends.</li>
+      </ul>
+    </section>
+  </div>
 
   <script>
     function toggleDarkMode() {
@@ -108,13 +143,11 @@
         localStorage.setItem("theme", "light");
       }
     }
-
     window.onload = function () {
       if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");
       }
     };
   </script>
-
 </body>
 </html>
