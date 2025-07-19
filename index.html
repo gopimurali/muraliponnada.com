@@ -5,35 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Murali Ponnada | Software Engineer</title>
   <style>
-  body {
-    transition: background-color 0.3s, color 0.3s;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #ffffff;
+      color: #000000;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-  body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
 
-  .toggle-container {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-  }
+    h1, h2 {
+      margin-top: 2rem;
+    }
 
-  .toggle-button {
-    padding: 6px 12px;
-    background-color: #eee;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 6px;
-  }
+    a {
+      color: #007acc;
+    }
 
-  body.dark-mode .toggle-button {
-    background-color: #333;
-    color: white;
-  }
-</style>
+    body.dark-mode a {
+      color: #80bfff;
+    }
+
+    .toggle-container {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .toggle-button {
+      padding: 6px 12px;
+      background-color: #eee;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    body.dark-mode .toggle-button {
+      background-color: #333;
+      color: white;
+    }
+  </style>
   <link rel="icon" type="image/png" href="assets/favicon.ico">
 </head>
 <body>
