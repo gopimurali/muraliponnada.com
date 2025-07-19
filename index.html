@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Murali Ponnada | Software Engineer</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -52,76 +54,67 @@
       color: white;
     }
   </style>
-  <link rel="icon" type="image/png" href="assets/favicon.ico">
 </head>
 <body>
+
+  <!-- Dark Mode Toggle -->
   <div class="toggle-container">
-  <button class="toggle-button" onclick="toggleDarkMode()">🌙 Dark Mode</button>
-</div>
-  <div class="container">
-    <h1>Murali Venkateswara Gopi Krishna Ponnada</h1>
-    <p><strong>Software Engineer | Full Stack Developer | Python Developer</strong></p>
-
-    <div class="contact">
-      <p>📍 Jersey City, NJ</p>
-      <p>📧 <a href="mailto:murali@muraliponnada.com">murali@muraliponnada.com</a></p>
-      <p>📞 (607) 595-7476</p>
-      <p>🔗 <a href="https://linkedin.com/in/pmvgk">LinkedIn</a> | <a href="https://github.com/gopimurali">GitHub</a></p>
-    </div>
-
-    <h2>About Me</h2>
-    <p>I'm a passionate and results-driven software engineer with a strong foundation in computer science and hands-on experience in full stack development, cloud platforms, and agile teams. I specialize in Python, Angular, and backend systems for high-volume data applications.</p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Python, Java, JavaScript, TypeScript, HTML5, CSS3</li>
-      <li>Frameworks: Angular, Flask, Django, Node.js, Express.js</li>
-      <li>Tools: Git, Postman, Docker, Jira, Quartz, Selenium</li>
-      <li>Databases: MySQL, MongoDB, SandraDB</li>
-    </ul>
-
-    <h2>Experience</h2>
-    <p><strong>Bank of America</strong> – Application Developer (Oct 2024 – Present)</p>
-    <ul>
-      <li>Developed Python-based solutions handling ~1M trades/day</li>
-      <li>Reduced production issues by 15% through robust testing and CI/CD</li>
-      <li>Built new flows for downstream systems and improved latency by 10%</li>
-    </ul>
-
-    <p><strong>Binghamton University</strong> – Research Intern (Jul 2024 – Oct 2024)</p>
-    <ul>
-      <li>Processed brain scan images and visualized cerebral blood flow data</li>
-      <li>Improved image processing for age-related neural studies</li>
-    </ul>
-
-    <p><strong>Infosys</strong> – Senior Systems Engineer (Dec 2019 – Aug 2022)</p>
-    <ul>
-      <li>Worked on regulatory reporting with Bank of America using Quartz</li>
-      <li>Enhanced valuations processing and reduced trade errors by 60%</li>
-    </ul>
-
-    <h2>Education</h2>
-    <p><strong>MS, Computer Science</strong> – Binghamton University (2022–2024)</p>
-    <p><strong>Bachelors, Electronics & Communication Engg.</strong> – CBIT, Osmania Univ. (2015–2019)</p>
+    <button class="toggle-button" onclick="toggleDarkMode()">🌙 Dark Mode</button>
   </div>
+
+  <!-- Portfolio Content -->
+  <h1>Murali Venkateswara Gopi Krishna Ponnada</h1>
+  <h3>Software Engineer | Full Stack Developer | Python Developer</h3>
+
+  <p>📍 Jersey City, NJ<br />
+    📧 <a href="mailto:murali@muraliponnada.com">murali@muraliponnada.com</a><br />
+    📞 (607) 595-7476<br />
+    🔗 <a href="https://www.linkedin.com/in/gopimurali" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/gopimurali" target="_blank">GitHub</a>
+  </p>
+
+  <h2>About Me</h2>
+  <p>I'm a passionate and results-driven software engineer with a strong foundation in computer science and hands-on experience in full stack development, cloud platforms, and agile teams. I specialize in Python, Angular, and backend systems for high-volume data applications.</p>
+
+  <h2>Skills</h2>
+  <ul>
+    <li>Languages: Python, Java, JavaScript, TypeScript, HTML5, CSS3</li>
+    <li>Frameworks: Angular, Flask, Django, Node.js, Express.js</li>
+    <li>Tools: Git, Postman, Docker, Jira, Quartz, Selenium</li>
+    <li>Databases: MySQL, MongoDB, SandraDB</li>
+  </ul>
+
+  <h2>Experience</h2>
+
+  <strong>Bank of America</strong> – Application Developer (Oct 2024 – Present)
+  <ul>
+    <li>Developed Python-based solutions handling ~1M trades/day</li>
+    <li>Reduced production issues by 15% through robust testing and CI/CD</li>
+    <li>Built new flows for downstream systems and improved latency by 10%</li>
+  </ul>
+
+  <strong>Binghamton University</strong> – Research Intern (Jul 2024 – Oct 2024)
+  <ul>
+    <li>Processed brain scan images and visualized cerebral blood flow data</li>
+    <li>Worked with MATLAB scripts and large datasets to extract patterns</li>
+  </ul>
+
   <script>
-  function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-
-    // Optional: Save user preference
-    if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+      }
     }
-  }
 
-  // Load saved theme on page load
-  window.onload = function () {
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark-mode");
-    }
-  };
-</script>
+    window.onload = function () {
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+      }
+    };
+  </script>
+
 </body>
 </html>
