@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0d1117;
+  --surface: #161b22;
+  --surface-elevated: #1c2128;
+  --border: #30363d;
+  --primary: #58a6ff;
+  --secondary: #3fb950;
+  --foreground: #e6edf3;
+  --muted: #8b949e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background-color: rgba(88, 166, 255, 0.3);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .card-surface {
+    @apply rounded-xl border border-border bg-surface;
+  }
+
+  .section-padding {
+    @apply px-4 py-20 sm:px-6 lg:px-8;
+  }
+}
