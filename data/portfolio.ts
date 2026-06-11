@@ -78,7 +78,7 @@ export const portfolio: PortfolioData = {
   heroTitle:
     "Backend Engineer focused on trading platforms, financial data workflows, and production reliability.",
   tagline:
-    "Software engineer with ~5 years building and supporting high-volume trading systems, regulatory reporting flows, and production backend infrastructure.",
+    "Software engineer with 5+ years building and supporting high-volume trading systems, regulatory reporting flows, and production backend infrastructure.",
   tickerItems: [
     "Trading platform APIs",
     "Financial data workflows",
@@ -91,8 +91,8 @@ export const portfolio: PortfolioData = {
     "Distributed messaging",
     "Capital markets infrastructure",
   ],
-  yearsExperience: "~5 years",
-  location: "Harrison, NJ (NYC metro)",
+  yearsExperience: "5+ years",
+  location: "Harrison, NJ / New York City Metro Area",
   email: "gopisai2421@gmail.com",
   phone: "(607) 595-7476",
   linkedin: "https://linkedin.com/in/pmvgk/",
@@ -103,7 +103,7 @@ export const portfolio: PortfolioData = {
     title:
       "Murali Ponnada | Software Engineer — Trading Systems & Backend Engineering",
     description:
-      "Software Engineer with ~5 years building trading platforms, financial data workflows, and regulatory reporting at Bank of America. Python and Java backend engineer focused on high-throughput systems, APIs, messaging, and production reliability.",
+      "Software Engineer with 5+ years building trading platforms, financial data workflows, and regulatory reporting at Bank of America. Python and Java backend engineer focused on high-throughput systems, APIs, messaging, and production reliability.",
   },
   navLinks: [
     { label: "About", href: "#about" },
@@ -115,9 +115,9 @@ export const portfolio: PortfolioData = {
   ],
   about: {
     paragraphs: [
-      "I'm a software engineer who builds and supports production systems at the intersection of capital markets and backend engineering — trading platforms, financial data pipelines, regulatory reporting, and the APIs and messaging layers that keep them reliable under load.",
+      "I'm a software engineer who builds and supports production systems at the intersection of capital markets and backend engineering - trading platforms, financial data pipelines, regulatory reporting, and the APIs and messaging layers that keep them reliable under load.",
       "My recent work centers on equities derivatives trading infrastructure: real-time position APIs, regulatory data flows, high-volume trade processing, and observability across distributed services. I care about correctness under peak load, clear operational signals, and code that teams can maintain.",
-      "I'm actively seeking roles as a Software Engineer, Backend Engineer, or Quant Developer on trading platform, fintech, and capital markets engineering teams — building infrastructure, not trading strategies.",
+      "I'm actively seeking roles as a Software Engineer, Backend Engineer, or Quant Developer on trading platform, fintech, and capital markets engineering teams - building infrastructure, not trading strategies.",
     ],
     careerFocus: [
       "Trading platform systems",
@@ -144,7 +144,7 @@ export const portfolio: PortfolioData = {
       highlights: [
         "Built and maintained APIs delivering real-time trade position data to downstream consumers, using parallel processing and caching to handle high request volume with low latency while protecting P&L and dividend workflows.",
         "Led design and launch of a financial regulatory reporting flow within a legacy system — improving handling of instruments, transactions, and position data with zero SLA breaches during rollout.",
-        "Developed backend solutions processing ~1M trades/day at <1% error rate, using concurrency and Quartz scheduling for sub-second processing latencies.",
+        "Contributed to high-volume equities derivatives workflows supporting up to ~7M daily trade records, leveraging concurrency, Quartz scheduling for sub-second processing latencies, and caching to improve reliability and production stability.",
         "Migrated messaging infrastructure across multiple servers, improving latency by ~10% and reliability by ~12% in critical trading workflows.",
         "Implemented observability with Grafana, Kibana, and Splunk, reducing production incidents by ~8% and enabling faster root-cause analysis.",
         "Partnered with product owners and cross-functional teams on deliverables; documented APIs and workflows to improve onboarding and reduce knowledge silos.",
@@ -161,6 +161,7 @@ export const portfolio: PortfolioData = {
         "Kibana",
         "Docker",
         "CI/CD",
+        "Distributed Systems",
       ],
     },
     {
@@ -183,13 +184,14 @@ export const portfolio: PortfolioData = {
       project: "CIRRUS — Middle Office Regulatory Reporting",
       highlights: [
         "Improved trade processing and end-of-day risk systems on the Quartz platform for Bank of America, resolving issues with currency conversions, FX trades, and trade record masking.",
-        "Enhanced valuations processing: improved exposure reporting accuracy by ~20%, reduced errors by ~30%, and increased transaction reporting accuracy by ~10%; resolved issues affecting ~100K daily trades.",
-        "Implemented compliance coverage for CFTC, MiFID, HKMA, SEC, ASIC, and EMIR across FX, EQ, IR, and CR asset classes.",
+        "Enhanced valuations processing and event-type generation logic, improving exposure reporting accuracy by ~20%, reducing errors by ~30%, and increasing transaction reporting accuracy by ~10%.",
+        "Contributed to regulatory reporting workflows processing ~1M trades/day across FX, EQ, IR, and CR asset classes; resolved reporting issues affecting ~100K daily trades.",
+        "Implemented compliance coverage for CFTC, MiFID, HKMA, SEC, ASIC, and EMIR regulatory standards.",
         "Served as Level 3 (L3) escalation point for production incidents; traced impact across hardware, network, and service operations.",
         "Contributed to regulatory impact assessments and design reviews with stakeholders across asset classes.",
       ],
       technologies: [
-        "Java",
+        "Python",
         "Quartz",
         "Oracle",
         "Regulatory Reporting",
@@ -248,7 +250,8 @@ export const portfolio: PortfolioData = {
     },
     {
       name: "Trading & Finance Tech",
-      skills: ["AMPS", "Quartz", "Kafka", "Regulatory Reporting"],
+      skills: ["AMPS", "Quartz", "Kafka", "Regulatory Reporting", 
+        "Equities Derivatives", "Trade Lifecycle", "Instrument / Transaction / Position Data"],
     },
     {
       name: "Databases",
