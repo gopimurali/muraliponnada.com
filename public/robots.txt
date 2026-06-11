@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://muraliponnada.dev/sitemap.xml
+Sitemap: https://www.muraliponnada.com/sitemap.xml
