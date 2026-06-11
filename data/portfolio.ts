@@ -317,6 +317,6 @@ export const portfolio: PortfolioData = {
     { label: "Latency improvement", value: "~10%" },
     { label: "Incident reduction", value: "~8%" },
     { label: "Exposure accuracy gain", value: "~20%" },
-    { label: "Daily trades impacted (Infosys)", value: "~100K" },
+    { label: "Daily trades impacted", value: "~100K" },
   ],
 };
